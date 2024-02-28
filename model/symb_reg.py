@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('dataset/funcao11/funcao11_50.csv')
+data = pd.read_csv('dataset/funcao11/funcao11_100.csv')
 data_test = pd.read_csv('dataset/funcao11/funcao11_teste50k.csv')
 
-
+#transformando dados csv em array
 X_train = np.column_stack((data['x'], data['y']))
 y_train = data['val-esp']
 
@@ -29,15 +29,15 @@ def _protected_div(x1, x2):
 def _protected_sqrt(x1):
     with np.errstate(invalid='ignore'):
         result = np.where(x1 >= 0, np.sqrt(x1), x1)
-        result = np.where(np.isnan(result), 0., result)
-        result = np.where(np.isinf(result), 0., result)
+        result = np.where(np.isnan(result), x1, result)
+        result = np.where(np.isinf(result), x1, result)
     return result
 
 def _protected_log(x1):
     with np.errstate(divide='ignore', invalid='ignore'):
         result = np.where(x1 > 0, np.log(x1), x1)
-        result = np.where(np.isnan(result), 0., result)
-        result = np.where(np.isinf(result), 0., result)
+        result = np.where(np.isnan(result), x1, result)
+        result = np.where(np.isinf(result), x1, result)
     return result
 
 protected_div = make_function(function=_protected_div, name='protected_div', arity=2)
@@ -59,17 +59,31 @@ converter ={
 }
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.1, p_subtree_mutation=0,p_hoist_mutation=0)
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0, p_subtree_mutation=0.1,p_hoist_mutation=0)
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
-
+# Previsões do modelo
+y_pred = est_gp.predict(X_test)
 #resultados em avaliação de modelo
-print(est_gp.score(X_test, y_test))
+score_gp = est_gp.score(X_test, y_test)
 
 """
 #simplificando expressões
 simp_exp = sp.sympify(str(est_gp._program), locals=converter)
 print(simp_exp)
 """
-    
+
+import matplotlib.pyplot as plt
+
+#plota a função
+axs = plt.subplots(figsize=(12, 10))
+
+#gráfico: Valores de teste vs Predições do modelo
+axs[1].scatter(X_test[:, 0], y_test, color='green', alpha=0.5, label='Valores de teste')
+axs[1].scatter(X_test[:, 0], y_pred, color='red', alpha=0.5, label='Predições do modelo')
+axs[1].set_title('Valores de teste vs Predições do modelo')
+axs[1].legend()
+
+# Mostra os gráficos
+plt.show()
