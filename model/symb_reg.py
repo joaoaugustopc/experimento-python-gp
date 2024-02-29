@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-data = pd.read_csv('dataset/funcao13/funcao13_1000.csv')
-data_test = pd.read_csv('dataset/funcao13/funcao13_teste50k.csv')
+data = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_{qtd_train}.csv')
+data_test = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_teste50k.csv')
 
 #separando dados csv
 X_train = data.drop('val-esp', axis=1).values
@@ -85,11 +85,13 @@ print('\nFunção simplificada:', exp_simp)
 
 #plota a função
 import matplotlib.pyplot as plt
+plt.ion()
+
 axs = plt.subplots(figsize=(12, 10))
 #gráfico: Valores de teste vs Predições do modelo
 axs[1].scatter(X_test[:, 0], y_test, color='green', alpha=0.5, label='Valores de teste')
 axs[1].scatter(X_test[:, 0], y_pred, color='red', alpha=0.5, label='Predições do modelo')
-axs[1].set_title('Valores de teste vs Predições do modelo')
+axs[1].set_title(f'Valores de teste vs Predições do modelo: execução {iteration} - R2: {score_gp:.2f}')
 axs[1].legend()
 # Mostra os gráficos
-plt.show()
+plt.savefig(f'graficos/valores_teste_vs_predicoes_execucao_{iteration}.png')
