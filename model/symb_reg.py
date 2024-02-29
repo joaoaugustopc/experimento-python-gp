@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 
+
 data = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_{qtd_train}.csv')
 data_test = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_teste50k.csv')
 
@@ -48,7 +49,7 @@ protected_log = make_function(function=_protected_log, name='protected_log', ari
 function_set = ['add', 'sub', 'mul', 'cos', 'sin', 'tan', protected_div, protected_sqrt, protected_log]
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0, p_subtree_mutation=0.1,p_hoist_mutation=0)
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01,p_hoist_mutation=0.01)
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
@@ -73,9 +74,9 @@ converter = {
     'protected_log': lambda x: sp.log(x),
 }
 
-print('R2:', est_gp.score(X_test, y_test))
+#print('R2:', est_gp.score(X_test, y_test))
 next_e = sp.sympify(str(est_gp._program), locals=converter)
-print('Função gerada:', next_e)
+#print('Função gerada:', next_e)
 
 """funcao simplificada    
 exp_trig_simp = sp.trigsimp(next_e)
