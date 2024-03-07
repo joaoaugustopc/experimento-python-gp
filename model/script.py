@@ -1,7 +1,11 @@
 import runpy
+import os
 
 funcao_train_valuen = input('Função para treino: ')
 qtd_train_value = int(input('Quantidade de dados para treino: '))
+
+# Criar uma nova pasta chamada "graficos/funcao"
+os.makedirs(f'graficos/funcao{funcao_train_valuen}/data_{qtd_train_value}', exist_ok=True)
 
 best_score = float('-inf')
 best_model = None
