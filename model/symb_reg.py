@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from sklearn.metrics import mean_squared_error
 
 data = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_{qtd_train}.csv')
 data_test = pd.read_csv(f'dataset/funcao{funcao_train}/funcao{funcao_train}_teste50k.csv')
@@ -48,15 +49,21 @@ protected_log = make_function(function=_protected_log, name='protected_log', ari
 function_set = ['add', 'sub', 'mul', 'cos', 'sin', 'tan', protected_div, protected_sqrt, protected_log]
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01)
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, random_state= seed, parsimony_coefficient= 'auto')
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
 # Previsões do modelo
 y_pred = est_gp.predict(X_test)
 #resultados em avaliação de modelo
-score_gp = est_gp.score(X_test, y_test)
+apt = mean_squared_error(y_test, y_pred)
+# est_gp.score(X_test, y_test)
 
+df = pd.read_csv('test.csv')
+df.loc[len(df.index)] = (seed,apt)
+df.to_csv('test.csv', index=False)
+
+"""
 
 #imprime a função gerada e simplifica equação
 import sympy as sp
@@ -75,6 +82,7 @@ converter = {
 
 #print('R2:', est_gp.score(X_test, y_test))
 next_e = sp.sympify(str(est_gp._program), locals=converter)
+"""
 #print('Função gerada:', next_e)
 
 """funcao simplificada    
@@ -84,6 +92,8 @@ print('\nFunção simplificada:', exp_simp)
 """
 
 #plota a função
+
+"""
 import matplotlib.pyplot as plt
 plt.ion()
 
@@ -91,7 +101,8 @@ axs = plt.subplots(figsize=(12, 10))
 #gráfico: Valores de teste vs Predições do modelo
 axs[1].scatter(X_test[:, 0], y_test, color='green', alpha=0.5, label='Valores de teste')
 axs[1].scatter(X_test[:, 0], y_pred, color='red', alpha=0.5, label='Predições do modelo')
-axs[1].set_title(f'Valores de teste vs Predições do modelo: execução {iteration} - R2: {score_gp:.2f}')
+axs[1].set_title(f'Valores de teste vs Predições do modelo: execução {iteration} - R2: {apt:.2f}')
 axs[1].legend()
 # Mostra os gráficos
 plt.savefig(f'graficos/funcao{funcao_train}/data_{qtd_train}/valores_teste_vs_predicoes_execucao_{iteration}.png')
+"""
