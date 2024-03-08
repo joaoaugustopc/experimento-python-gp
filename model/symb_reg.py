@@ -57,7 +57,8 @@ est_gp.fit(X_train, y_train)
 y_pred = est_gp.predict(X_test)
 #resultados em avaliação de modelo
 apt = mean_squared_error(y_test, y_pred)
-# est_gp.score(X_test, y_test)
+
+score_gp = est_gp.score(X_test, y_test)
 
 df = pd.read_csv('test.csv')
 df.loc[len(df.index)] = (seed,apt)
