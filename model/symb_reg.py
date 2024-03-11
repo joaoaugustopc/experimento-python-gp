@@ -60,9 +60,6 @@ apt = mean_squared_error(y_test, y_pred)
 
 score_gp = est_gp.score(X_test, y_test)
 
-df = pd.read_csv(f'results/funcao{funcao_train}_{qtd_train}.csv')
-df.loc[len(df.index)] = (seed, apt, est_gp._program)
-df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
 
 """
 df = pd.read_csv('test.csv')
@@ -70,7 +67,6 @@ df.loc[len(df.index)] = (seed,apt)
 df.to_csv('test.csv', index=False)
 """
 
-"""
 
 #imprime a função gerada e simplifica equação
 import sympy as sp
@@ -90,13 +86,14 @@ converter = {
 
 #print('R2:', est_gp.score(X_test, y_test))
 next_e = sp.sympify(str(est_gp._program), locals=converter)
-"""
-#print('Função gerada:', next_e)
-
-"""funcao simplificada    
+  
 exp_trig_simp = sp.trigsimp(next_e)
 exp_simp = sp.simplify(exp_trig_simp)
-print('\nFunção simplificada:', exp_simp)
+
+df = pd.read_csv(f'results/funcao{funcao_train}_{qtd_train}.csv')
+df.loc[len(df.index)] = (seed, apt, exp_simp)
+df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
+"""
 """
 
 #plota a função
