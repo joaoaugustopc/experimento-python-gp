@@ -49,7 +49,7 @@ protected_log = make_function(function=_protected_log, name='protected_log', ari
 function_set = ['add', 'sub', 'mul', 'cos', 'sin', 'tan', protected_div, protected_sqrt, protected_log]
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, random_state= seed, parsimony_coefficient= 'auto')
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, parsimony_coefficient= 'auto', random_state=seed)
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
@@ -60,14 +60,21 @@ apt = mean_squared_error(y_test, y_pred)
 
 score_gp = est_gp.score(X_test, y_test)
 
+df = pd.read_csv(f'results/funcao{funcao_train}_{qtd_train}.csv')
+df.loc[len(df.index)] = (seed, apt, est_gp._program)
+df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
+
+"""
 df = pd.read_csv('test.csv')
 df.loc[len(df.index)] = (seed,apt)
 df.to_csv('test.csv', index=False)
+"""
 
 """
 
 #imprime a função gerada e simplifica equação
 import sympy as sp
+import pandas as pd
 
 converter = {
     'sub': lambda x, y : x-y,
