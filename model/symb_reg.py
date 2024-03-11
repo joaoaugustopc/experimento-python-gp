@@ -98,7 +98,6 @@ df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
 
 #plota a função
 
-"""
 import matplotlib.pyplot as plt
 plt.ion()
 
@@ -110,4 +109,5 @@ axs[1].set_title(f'Valores de teste vs Predições do modelo: execução {iterat
 axs[1].legend()
 # Mostra os gráficos
 plt.savefig(f'graficos/funcao{funcao_train}/data_{qtd_train}/valores_teste_vs_predicoes_execucao_{iteration}.png')
+"""
 """
