@@ -1,0 +1,5 @@
+seed,mse,equacao
+463,0.4368549025061854,sqrt(sin(X0 - X1) + sin(sin((sin(X0) - 0.758361875990508)*cos(X1)))) + sqrt(sin(X0 + X1) + sin(sqrt(sin(X0 - X1) + sin(X0 + X1 - sin(log(sin(log(X0)/sqrt(X0)) - 0.283870932607198)))))) + sin(X0 - X1) + sin(X0 + X1)
+251,4.970483775159964,
+70,5.425415527485979e-31,6*sin(X0)*cos(X1)
+342,0.015986154354602856,3*sin(X0 + X1) + tan(sin(X0 - X1)) + tan(sin(X0 - X1))/cos(0.975704873412037*cos(tan(sin(X0 - X1))))
