@@ -9,9 +9,13 @@ qtd_train_value = int(input('Quantidade de dados para treino: '))
 # Criar uma nova pasta chamada "graficos/funcao"
 os.makedirs(f'graficos/funcao{funcao_train_valuen}/data_{qtd_train_value}', exist_ok=True)
 
-# Criar um novo arquivo chamado "results/funcao.csv" para salvar os resultados
-df = pd.DataFrame(columns=['seed', 'mse', 'equacao'])
-df.to_csv(f'results/funcao{funcao_train_valuen}_{qtd_train_value}.csv', index=False)
+file_path = f'results/funcao{funcao_train_valuen}_{qtd_train_value}.csv'
+if os.path.exists(file_path):
+    df = pd.read_csv(file_path)
+else:
+# Criar um novo arquivo chamado "results/funcao.csv" para salvar os resultado
+    df = pd.DataFrame(columns=['seed', 'mse', 'equacao'])
+    df.to_csv(f'results/funcao{funcao_train_valuen}_{qtd_train_value}.csv', index=False)
 
 
 for i in range(50):

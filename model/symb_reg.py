@@ -49,7 +49,7 @@ protected_log = make_function(function=_protected_log, name='protected_log', ari
 function_set = ['add', 'sub', 'mul', 'cos', 'sin', 'tan', protected_div, protected_sqrt, protected_log]
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, parsimony_coefficient= 'auto', random_state=seed)
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, random_state=seed,parsimony_coefficient= 0.01)
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
@@ -98,6 +98,7 @@ df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
 
 #plota a função
 
+"""
 import matplotlib.pyplot as plt
 plt.ion()
 
@@ -109,5 +110,4 @@ axs[1].set_title(f'Valores de teste vs Predições do modelo: execução {iterat
 axs[1].legend()
 # Mostra os gráficos
 plt.savefig(f'graficos/funcao{funcao_train}/data_{qtd_train}/valores_teste_vs_predicoes_execucao_{iteration}.png')
-"""
 """
