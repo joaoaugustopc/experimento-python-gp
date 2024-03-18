@@ -58,12 +58,6 @@ y_pred = est_gp.predict(X_test)
 #resultados em avaliação de modelo
 apt = mean_squared_error(y_test, y_pred)
 
-"""
-df = pd.read_csv('test.csv')
-df.loc[len(df.index)] = (seed,apt)
-df.to_csv('test.csv', index=False)
-"""
-
 #imprime a função gerada e simplifica equação
 import sympy as sp
 import pandas as pd
