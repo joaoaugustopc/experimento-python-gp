@@ -23,5 +23,4 @@ for i in range(len(equacoes)):
     apt = mean_squared_error(val_esp, result)
     df.loc[len(df.index)] = (equacoes[i],apt)
 
-
 df.to_csv('results/resultados_equacoes_funcao5_50.csv', index=False)
