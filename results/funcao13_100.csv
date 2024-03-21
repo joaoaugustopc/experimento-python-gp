@@ -1,51 +1,14 @@
 seed,mse,equacao
-944,483.6653653419122,tan(tan(0.974))
-236,585.4933056090929,0.824
-298,582.657102094736,0.965
-707,491.6209327101556,tan(tan(cos(-0.262)))
-588,583.2003988595249,0.938
-734,489.8631599531968,tan(tan(0.967))
-636,531.6865333742521,tan(tan(0.924))
-138,307.5735846435556,"mul(X3, X3)"
-876,581.9668990583261,cos(0.007)
-856,583.2790446806488,0.934
-254,487.19236147032655,"add(tan(tan(add(0.999, tan(tan(0.953))))), add(tan(tan(0.953)), 0.999))"
-352,307.5735846435556,"mul(X3, X3)"
-759,307.5735846435556,"mul(X3, X3)"
-267,266.11389446311733,"add(add(cos(-0.033), add(add(cos(-0.033), 0.473), add(cos(-0.033), mul(sub(cos(cos(mul(-0.702, X1))), X3), X0)))), add(sub(cos(protected_sqrt(cos(add(protected_sqrt(add(add(add(cos(-0.033), 0.473), cos(cos(add(add(cos(-0.033), add(add(protected_sqrt(add(add(cos(-0.033), add(cos(-0.033), add(protected_sqrt(add(cos(-0.033), 0.473)), add(add(cos(-0.033), add(add(cos(-0.033), add(add(add(add(cos(-0.033), cos(-0.033)), 0.473), protected_sqrt(protected_sqrt(cos(-0.033)))), add(cos(-0.033), cos(-0.033)))), cos(-0.033))), 0.473)))), 0.473)), 0.473), cos(-0.033))), add(add(0.473, add(add(cos(-0.033), add(cos(-0.033), add(add(cos(-0.033), 0.473), 0.473))), add(cos(-0.033), cos(-0.033)))), add(cos(-0.033), sub(cos(protected_sqrt(cos(-0.033))), protected_log(protected_sqrt(protected_sqrt(X3)))))))))), 0.473)), 0.473)))), protected_log(protected_sqrt(protected_sqrt(X3)))), cos(-0.033)))"
-90,462.1364307713442,"sub(0.828, mul(X3, tan(X3)))"
-779,551.2076422012494,tan(tan(0.882))
-605,582.1462329059941,0.991
-511,307.5735846435556,"mul(X3, X3)"
-610,542.3412350711668,tan(tan(0.904))
-182,485.94160468867966,tan(tan(cos(-0.241)))
-309,482.9865048567425,tan(tan(tan(0.773)))
-768,359.9653889749926,"sub(0.862, mul(X3, X0))"
-601,307.5735846435556,"mul(X3, X3)"
-272,307.5735846435556,"mul(X3, X3)"
-778,307.5735846435556,"mul(X3, X3)"
-661,483.1708720957474,tan(tan(0.975))
-481,584.392728493532,0.879
-738,307.5735846435556,"mul(X3, X3)"
-449,562.0069330435556,"mul(X1, X1)"
-333,307.5735846435556,"mul(X3, X3)"
-612,530.7048078812709,tan(tan(0.925))
-972,493.8419126518811,tan(tan(cos(0.269)))
-964,582.6895215731347,0.964
-205,542.6570111580044,"protected_log(sub(sub(sub(protected_div(protected_div(0.152, X0), protected_sqrt(X4)), add(add(X0, X0), protected_log(X3))), protected_sqrt(protected_div(mul(X0, X3), tan(0.319)))), sin(protected_log(protected_log(sin(0.864))))))"
-985,307.5735846435556,"mul(X3, X3)"
-884,583.5310470358171,0.922
-421,582.0380989732168,0.996
-692,508.4601851479018,tan(tan(0.985))
-341,307.5735846435556,"mul(X3, X3)"
-954,483.30215429045154,tan(tan(0.978))
-581,513.806914193393,tan(tan(0.946))
-908,547.2473495823206,tan(tan(0.893))
-190,537.3441930223587,tan(tan(0.914))
-543,552.5794557395589,tan(tan(0.878))
-243,582.0190997489415,0.997
-55,592.3617124452489,"protected_div(cos(cos(X0)), protected_log(protected_log(X0)))"
-575,518.2888393282291,"protected_div(0.907, 0.181)"
-265,582.69983155156,0.963
-381,500.34203289698496,tan(tan(0.959))
-355,307.5735846435556,"mul(X3, X3)"
+773,1300.868905723857,-X0/(X0 - X3) - 2*sqrt(X0*X3) - sqrt(log((-X0*X3 - X3*X4 + tan(sqrt(X1*X2)))/sqrt(2*X0*X3 + log(sqrt(-sin(X1/cos(sin(sin(cos(sin(X3*X4)))))) + cos(log(X0) + cos(log(X3 - log(X0*tan(sqrt(X1*X2))) - log(sqrt(cos(log(X0*X3))))) + log(sqrt(cos(log(X0) + log(0.678232998312527*sqrt(-X4)) + log(X0*X3) + cos(sin(X3*X4)) - tan(tan(sqrt(X1*X2)) + tan(sin(log(X0*X4) + log(-X0/X3**2 + tan(sqrt(X1*X2))) + log(cos(X0*X3)) - tan(X4))))))) - tan(X2)) - tan(sqrt(log(log(X0/X3))))))) + sin(X1 - sqrt(sin(X3*X4))) - tan(sqrt(X1*X2))))) - log(log(X0*X3)) + sin(sin(X0*X4/sqrt(X0 + X1))) + tan(sqrt(X1*X2))
+732,94.55667524975291,-X0*X3 + X3 + sqrt(-X0 + sin(sqrt(sin(log(-X0*X3 + X3 + sqrt(-X0 - sin(X0*X3 - sqrt(sin(-2*X0 + sin(tan(X3)/(X3 - cos(tan(cos(X1))))) + 0.476))) + 0.476) - log(X0*X3 - X0) - log(log(log((X3 - tan(X3))*tan(X3)))))/(sqrt(log(log(X3 - tan(X3)))*cos(tan(cos(X1)))) + cos(X1 - 0.719)))) - tan(X3)) + 0.476) - log(X0*X3 - X0) - log(log(-sqrt(-X0 - sin(X0*X3 - sqrt(sin(log(X0*X3)/(sqrt(X0*X1) + sqrt(sin(X3*tan(sqrt(log(X3))*cos(log(log(log((X3 - tan(X3))*tan(X3))))))/X4)))))) + 0.476) + log(log(log((X3 - tan(X3))*tan(X3))))))
+410,34.55953770877812,-X0 - (X0 - log(X3))*(X3 + sqrt(log(X3))) + (X3 + sqrt(X3 - 0.453) - sin(cos(X3 - 0.0917*I*X4*(cos(sqrt((sqrt(X0) - log(X3))*(2*X3 - 0.453)) - sqrt(X3 - 0.453) + (X0 + X3 - 0.453)*sin(cos(X3 + 0.61035678377137*cos(X4*(3*X3 - 0.453) - log(tan(X2))))) + 0.1*I*sin(sqrt(X0))) + 0.1*I)*sin(sqrt(X0) - log(X3))/X1)))**(1/4) - (X3 + sqrt(X3 - 0.453) - log(X0**(1/4)) - log(X3))*cos(X3 - 0.453) - tan(log(X3))
+953,425.0688867808639,X3**2 + sqrt(log((-X4*cos(tan(X3**2 + log(X3 + X4 - log(X3 + X4 + sqrt(log(sin(0.305*X4)))/sin(log(X3)) - cos(X1)) - cos(sin(cos(sqrt(X4) + 0.66238661179844)*cos(sqrt(log(-X4*cos(tan(X3**2 + X3)) + sqrt(tan(X3**2 - log(X3 + X4 - log(0.471357953935608*X3 + sqrt(X4) + X4))) + tan(X3**2)/sin(sqrt(log(X3**2 - 0.61*X4) + tan(tan(1)))))) + tan(sqrt(X4) - log(X3 + X4))))))))) + sqrt(-X4*cos(tan(X3*tan(cos(X0) - cos(X4)) + log(X3 + X4 - log(sqrt(-log(X3 + X4 - log(cos(tan(cos(X0) - cos(X4))))) - sin(sqrt(log(X3**2 - X4*cos(tan(X3**3 + X3 + X4)) + sqrt(log(cos(tan(log(-0.305*X4 + log(X3) - sin(1.89163916764614*tan(X3**2))) - cos(tan(X3 - log(-0.305*X4 + log(X3) + sin(tan(tan(1))))))))) + tan(X3 - log(X3 + X4)) + tan(log(X3 + X4))) + cos(X3**2 + sqrt(-X4*cos(tan(X3*tan(cos(X0) - cos(X4)) + log(X3 + X4 - log(sqrt(-log(X3 + X4 - log(log(X3 + X4))) - sin(sqrt(log(-X4*cos(tan(X3**3 + tan(sqrt(X4) - log(X3 + X4)))) + cos(cos(tan(log(X3**2) - cos(1))) - 0.274)) + tan(sqrt(X4) - 1))) + cos(sqrt(sin(X4)))) - cos(X1) + cos(sin(cos(sqrt(X1) + 0.66238661179844)*cos(sqrt(log(X3**2)))))/sin(log(X3))) - tan(sqrt(X4) - log(X3 + X4 - 1))))) + sqrt(log(cos(tan(log(-0.305*X4 + log(X3) - sin(1.89163916764614*tan(X3**2))) - cos(tan(cos(X0) - cos(X4)))))) + tan(X3 - log(X3 + X4)) + tan(sqrt(X4) - log(X3 + X4))) + tan(sqrt(X4) - log(X3 + X4))) + cos(sqrt(log(-0.305*X4 + sin((X3 + X4)**(1/4))) + tan(sqrt(X4))) + sin(0.348*X0) + cos(sqrt(X1) + 0.66238661179844)*cos(sqrt(log(X3**2)))))) + tan(sqrt(X4) - log(X3 + X4 - log(log(-X4*cos(tan(X3**2 + cos(X1))) + cos(X0) - cos(X4))))))) + cos(sqrt(sin(X4)))) - cos(X1) + cos(sin(cos(sqrt(X1) + 0.66238661179844)*cos(sqrt(log(X3**2)))))/sin(log(X3))) - tan(sqrt(X4) - log(X3 + X4 - 1))))) + sqrt(log(cos(tan(log(-0.305*X4 + log(X3) - sin(1.89163916764614*tan(X3**2))) - cos(tan(cos(X0) - cos(X4)))))) + tan(X3 - log(X3 + X4)) + tan(sqrt(X4) - log(X3 + X4 - tan(X3 - log(tan(X3**2)))))) + tan(X3 - log(X3 + X4 + tan(X3**2))) + tan(sqrt(X4) - log(X3 + X4 - log(X3**2)))))**(1/4) - sin(sqrt(log(sin(0.305*X4))))) + tan(sqrt(X4) - log(X3 + X4)) + tan(sqrt(X4) - log(sqrt(X3 + X4 + tan(log(X3 + X4)))))) + cos(sqrt(log(-0.305*X4 + sin((cos(log(X2)*sqrt(sin(log(X3**2)))/X3) + tan(sqrt(X4)))**(1/4))) + tan(tan(1))) - log(X3 + X4) + sin(0.348*X0) + cos(sqrt(sin(X4))))
+297,22.506017595949867,-X0*X3 + X3**2 - log(X0*X3) - sin(sqrt(X3**2*cos(log(log(sin(X3**2*log(X0*(-X0*X3 + X3**2 + log(X3) - log(X0*(X3 - 0.213)) + sin(X0*X3 - sqrt(X3**2*cos(sin(X0*sin(log(X2)) + log(X0*sin(log(X2))) - 0.253212945646096)))) + sin(log(X3))))**(1/4)))))) - log(log(X3))*log(cos(X3))) - sin(sqrt(X3**2*cosh(sinh(0.886002257333467*log(sqrt(X0*log(X0**2*X3)))))) + 0.213*log(cos(X3))) - sin(log(X0*(X0 + X1 + log(X3))) - 0.813019064967114*log(log(X0*(X0 + X1 + log(X3))))) - 0.813019064967114
+831,49.605207367077455,X0*(-X3 - 0.113) + (log(-0.275/(X0*log(sqrt(X3)))) + log(sqrt(-X3 - 0.113)) + log(sin(0.442718872423573*sqrt(1/X3))))*log(log(log(log(0.817349996940259/(X0*(-X3 - 0.113) - X3 + (log(log(log(1.27123162824617*cos(1.2242417254548*sqrt(X3))))/log(sqrt(X3))) + log(sin(0.196/X3)) - 0.404643305417179)*log(sqrt(log(1.2242417254548*sqrt(X3))) - 1) - log((-X3 - 0.113)*log(X3)) + sin(log(-3.18393902392531*log(sqrt(X3))) + log(log(0.817349996940259/cos(log(log(log(sqrt(X3)/log(cos(tan(X0)/log(cos(sqrt(log(log(sqrt(-X3 - 0.113))/cos(log(cos(X2)))))))))))/log(0.196/X3))))) + 0.113)))))) - log((-X3 - 0.113)*log(X3)) + sin(log(log(0.817349996940259/log(X3))) - tan(sin(cos(log(log(0.196/X3) + sqrt(sin(0.442718872423573*sqrt(1/X3)))))))) - 1
+114,52.472510361959245,X3*(-2.38526577223266*X0*cos(cos(log(-1.29828348379718*sin(sqrt(cos(tan(cos(tan(cos(cos(cos(0.108879308998559*X0/(cos(cos(log(-2.38526577223266*cos(tan(cos(2.38526577223266*X0*cos(3.71536724646833*tan(cos(tan(sqrt(cos(X1)))))) - X3)))/tan(X1) + 1.3924881191452)))*cos(tan(sin(tan(sin(tan(X3*(X2/(X3 + cos(sin(cos(X0)))) + X3) - cos(cos(3.71536724646833*cos(cos(log(-1.29828348379718*sin(sqrt(cos(tan(cos(tan(cos(cos(1.55763239875389*cos(0.113868239337249*X0*cos(tan(cos(tan(cos(tan(sqrt(cos(X0))))))))/(cos(cos(log(-0.642*X0 - 2.38526577223266*sqrt(X3)*cos(tan(cos(cos(cos(sqrt(X4))))))/cos(cos(cos(cos(sqrt(X3)*(X3 + cos(2.38526577223266*X3*cos(tan(X1))*tan(sin(X0)) - X3))/sqrt(tan(sin(tan(cos(X1))))))/sqrt(X3)))))))*cos(tan(sin(0.272364591803502/sqrt(X4))))))/X0))))))))/cos(sin(tan(0.57*sqrt(X4)))*cos(tan(X1 + X3)) + sqrt(cos(cos(cos(cos(cos(X1)/sqrt(X3))))))))/sqrt(X3))))) + 0.177364858780762)))/sqrt(X4))))))/cos(cos(1.55763239875389*cos(tan(X1))/X0))))))))))/cos(sqrt(cos(cos(X1))/sqrt(X4)) + sin(tan(0.57*sqrt(X4)))*cos(tan(X1 + X3))))/sqrt(X3))) + X3)
+282,40.37166663620365,X3**2 - sqrt(2)*sqrt(X3*cos(log(log(-X3*sin(0.915 + 0.831/tan(tan(sin(X3)))) + log(-0.831/tan(log(X3/X0))))/tan(log(sin(sqrt(sin(X2)))))) + sin(X0*sqrt(log(tan(log(0.730068489937759*sqrt(-1/X3)/X0))))))) - 0.831/tan(tan(0.533/(X0*X3)))
+72,286.85390050372223,
+213,43.0514669716443,(X3 + log(X3))*(-X0 + X3 + sin(cos(sqrt(zoo*cos(sin(sin(cos(cos(tan(sin(tan(log(log(X3 + log(X3)))))))))))*cos(tan(log(log(X3))))*tan(X0 - (X3 + log(X3))*(-sin(cos(sqrt(zoo*cos(sin(sin(cos(cos(tan(sin(tan(log(log(X3 + log(X3)))))))))))*cos(tan(log(log(X3))))*tan(X0 - (X3 + log(X3))*(-X0 + X3 + sin(cos(X3 + log(X3)))))/log(log(X3))))) + sin(cos(X3 + log(X3)))))/log(log(X3))))))
+728,22.702999068796736,-X0*X3 + X3**2 - sqrt(X0*X3 + cos(sqrt(log(X0*X3 + X3**2 - 1)) + cos(X0*X3 + 1/X3) + sqrt(cos(cos(X0/X1 + (sqrt(log(X0*X3 - X3)) + sin(cos(X3*X4*log(X3))))/sin(X4)) + (X0*X3 - sin(X1))/(X3*X4*log(X3)))))) - sin(X3**2 - sqrt(log(X3**2 - X3)) + sin(X3**2 - X3*log(sin(sin(X4))))) - sin(X3**2 - sqrt(log(X3**2 - X3)) + sin(X0*X3 - X3**2 + sin(0.154*X3) + cos(X3))) - sin(sin(X4)) - cos(sqrt(log(X3**2 - 1.09784320997618)) + cos(X0*X3) + sqrt(cos(cos(X0/X1 + sqrt(X3)) + (X0*X3 - sin(X1))/(X3*X4*log(X3))))) - 1
+736,474.0615061151572,X3**(1/4)*sin(cos(tan(X2)))/(sin(log(X2))*cos(X2*X3)) - sqrt(-(-X1 + tan(sqrt(log(X0)**2)))*cos(X2*X3)*cos(sqrt(cos(sqrt(log(X0)*sin(log(X0))*cos(X2*X3)*tan(X2)))*cos(cos(X1)))) + log(X3) - tan(X3**(1/4)))*tan(sqrt(log(X3))) + tan(X0*X1)
+659,96.02943737713743,-2.62580806989992*sqrt(X0*X3) + sin(sqrt(X2)) + sin(X3 - 0.154919333848297*I) + cos(sin(X2)/sin(sqrt(X2)))*cos(cos(sqrt(X3/X0)*(-sin(sqrt(X0*cos(sqrt(X3/X0)*(-sin(sin(tan((sin(sqrt(X2)) + cos(sin(sin(X0*X3))/X2)*cos(sin(cos(sqrt(X3/X0)*cos(sin(tan(sin(X2)))/X2))))/cos(tan(sin(X2))) + 0.595818764390649*I)/cos(sin(X0)))) + 0.256) - 0.154919333848297*I))) - sqrt(sin(sqrt(X2)) + cos(sin(cos(sqrt(X3/X0)*(-sin(sin(tan((-sqrt(X0*X3) + (sin(sqrt(X2)) + cos(sin(sin(log(0.38213195103332*X0*X3))))*cos(cos(sin(cos(X2**(1/4)*(-sin(sqrt(X0*X3) - sqrt(cos(sin(X2**(1/4) - sin(X2)/sin(log(0.19450516307596 - 0.38213195103332*log(X3 - sqrt(cos(log(X3))))))) + 0.256))) - 0.154919333848297*I)))))/cos(tan(sin(log(X3 - 0.154919333848297*I)))))*cos(sin(X2)/X2) + sin(X0) - sin(sin(1 - tan(X3/X0)/cos((-2.64325188015172*X0*X3 + sqrt(X0*X3))*sin(sin(X2)))) + 0.256) + sin(log(X3 - 0.154919333848297*I)) - 0.256)/cos(sin(X0)))) + 0.256) - 0.154919333848297*I))))*cos(cos(sin(sin(X0*X3))/X2))/cos(tan(sin(log(X3 - 0.154919333848297*I)))))) - 0.154919333848297*I)))/cos(tan(sin(log(X3 - 0.154919333848297*I))))
