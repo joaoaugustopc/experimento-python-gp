@@ -49,7 +49,7 @@ protected_log = make_function(function=_protected_log, name='protected_log', ari
 function_set = ['add', 'sub', 'mul', 'cos', 'sin', 'tan', protected_div, protected_sqrt, protected_log]
 
 #cria o modelo: alterar parâmetros de mutação
-est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, random_state=seed, parsimony_coefficient=150)
+est_gp = SymbolicRegressor(population_size=500, function_set=function_set, generations=50, tournament_size=4, metric='mse', p_crossover=0.9, init_depth=(5, 10), verbose=1, p_point_mutation=0.01, p_subtree_mutation=0.01, p_hoist_mutation=0.01, random_state=seed, parsimony_coefficient=3.0)
 
 #treina o modelo
 est_gp.fit(X_train, y_train)
