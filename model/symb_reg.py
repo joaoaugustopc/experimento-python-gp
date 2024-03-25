@@ -78,22 +78,11 @@ print("\nArvore de expressão:", est_gp._program)
 
 exp_simp = sp.parse_expr(str(est_gp._program), converter)
 
-"""
-next_e = sp.sympify(str(est_gp._program), locals=converter)
-print('\nEquação:', next_e)
-
-exp_trig_simp = sp.trigsimp(next_e)
-print('\nEquação simplificada:', exp_trig_simp)
-
-exp_simp = sp.simplify(exp_trig_simp) 
-print('\nEquação simplificada 2:', exp_simp)
-"""
-
 print('\nEquação:', exp_simp)
 
-df = pd.read_csv(f'results/funcao{funcao_train}_{qtd_train}.csv')
+df = pd.read_csv(f'results/2funcao{funcao_train}_{qtd_train}.csv')
 df.loc[len(df.index)] = (seed, apt, exp_simp)
-df.to_csv(f'results/funcao{funcao_train}_{qtd_train}.csv', index=False)
+df.to_csv(f'results/2funcao{funcao_train}_{qtd_train}.csv', index=False)
 
 """
 #plota a função
