@@ -17,6 +17,8 @@ converter = {
     'protected_sqrt': lambda x: sp.sqrt(x),
     'protected_log': lambda x: sp.log(x),
     'tan': lambda x: sp.tan(x),
+    'exp': lambda x: sp.exp(x),
+    'tanh': lambda x: sp.tanh(x)
 }
 
 exp_simp = sp.parse_expr(str(file_trees.read()), converter)

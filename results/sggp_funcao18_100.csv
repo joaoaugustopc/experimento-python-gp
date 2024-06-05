@@ -1,0 +1,4 @@
+seed,mse,equacao
+507,59854.14784873097,"root(div(add(sin(X4), sub(cos(X1), mul(X2, X4))), sqrt(sig(mul(X3, 1.586)))), mul(sub(sub(cos(X4), add(1.000, X3)), X4), add(X0, X0)), div(X4, log(div(X4, X1))))"
+611,6.765206193811573e-28,"root(sub(mul(mul(1.000, mul(1.000, X3)), mul(mul(X2, X4), mul(X1, X0))), X0), X0)"
+582,105243.1255466412,"root(add(X2, mul(sub(log(X1), X3), X3)), add(X0, div(mul(add(X1, X3), X3), add(mul(1.032, X4), X1))), mul(div(1.000, mul(sig(X3), sub(X2, X3))), X4))"
