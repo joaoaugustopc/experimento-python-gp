@@ -24,7 +24,7 @@ else:
     df2 = pd.DataFrame(columns=['seed', 'mse', 'equacao'])
     df2.to_csv(f'results/sggp_funcao{funcao_train_valuen}_{qtd_train_value}.csv', index=False)
 
-for i in range(1):
+for i in range(20):
     # variáveis para passar para o módulo
     vars_to_pass = {'funcao_train': funcao_train_valuen, 'qtd_train': qtd_train_value, 'iteration': i, 'seed' : random.randint(0, 1000)}
     namespace = runpy.run_path('model/symb_reg.py', init_globals=vars_to_pass)

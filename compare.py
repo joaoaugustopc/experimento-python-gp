@@ -8,10 +8,10 @@ data = pd.read_csv(f'results/2funcao{funcao_train_valuen}_{qtd_train_value}.csv'
 mediana = data['mse'].median()
 iqr = data['mse'].quantile(0.75) - data['mse'].quantile(0.25)
 
-print('Dados:\nMediana:', mediana, '\nIQR:', iqr)
+print('Dados GpLearn:\nMediana:', mediana, '\nIQR:', iqr)
 
 data = pd.read_csv(f'results/sggp_funcao{funcao_train_valuen}_{qtd_train_value}.csv')
 mediana = data['mse'].median()
 iqr = data['mse'].quantile(0.75) - data['mse'].quantile(0.25)
 
-print('Dados:\nMediana:', mediana, '\nIQR:', iqr)
+print('Dados SGGP:\nMediana:', mediana, '\nIQR:', iqr)
