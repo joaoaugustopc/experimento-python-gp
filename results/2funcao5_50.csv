@@ -1,0 +1,13 @@
+seed,mse,equacao
+129,5.52354465839025e-31,3*sin(X0 - X1) + 3*sin(X0 + X1)
+419,5.52354465839025e-31,3*sin(X0 - X1) + 3*sin(X0 + X1)
+625,5.351285087627304e-31,3*sin(X0 - X1) + 3*sin(X0 + X1)
+248,5.486485739261096e-31,3*sin(X0 - X1) + 3*sin(X0 + X1)
+887,0.060594668248565,2*sin(X0 - X1) + tan(sin(X0 + X1)) + tan(sin(sin(X0 - X1))) + tan(sin(tan(sin(X0 + X1))))
+292,0.0406107839800632,3*sin(X0 - X1) + sin(X0 + X1) + sin(sin(X0 + X1)) + tan(sin(X0 + X1))
+505,2.264379492484207,sin(X1) + sin(X0 - X1) + 2*sin(X0 + X1) + 2*sin(sin(X0 + X1))
+460,4.977963019525579,tan(tan(sin(tan(sin(sin(tan(sin(tan(sin(sqrt(tan(tan(sin(sin(X0 + X1))))))))**(1/4))))))))
+940,5.425415527485979e-31,3*sin(X0 - X1) + 3*sin(X0 + X1)
+730,6.523323601442484,sin(X0 - X1)
+160,0.0003499187565974,sin(X0 - X1) + 3*sin(X0 + X1) + sin(sin(X0 - X1)) + tan(sin(sin(X0 - X1)))
+603,4.8367192455123735,tan(tan(sin(tan(sin(sin(tan(sin(tan(tan(sin(tan(sin(sin(tan(sin(tan(sin(sin(tan(sin(sin(tan(sin(tan(sin(sin(tan(sin(tan(sin(sin(tan(sin(X0 - X1)))))))))))))))))))))))))))**(1/4))))))))

@@ -1,0 +1,10 @@
+seed,mse,equacao
+468,21.061016438422413,"root(add(add(X0, X0), X0), mul(X1, mul(sub(div(X1, X0), mul(X1, X1)), -0.455)))"
+237,9.178031512700654,"root(sub(mul(cos(mul(X1, X1)), X1), add(sin(sin(X1)), log(add(X0, 1.000)))), sub(add(sub(1.000, X1), mul(log(X0), add(X0, X0))), mul(sqrt(mul(X1, X1)), sub(sin(X1), add(X1, X1)))))"
+318,16.72484233584542,"root(div(mul(sub(mul(X1, 1.548), sin(X1)), sqrt(mul(X1, X1))), sin(sqrt(X1))), add(add(X0, add(X0, X0)), div(mul(cos(X0), X0), sig(sig(1.000)))))"
+693,15.867837762584491,"root(mul(log(cos(log(X1))), mul(sig(mul(X1, X1)), sub(X1, mul(4.516, X1)))), mul(cos(sin(sqrt(X0))), mul(sub(add(X0, X0), log(X0)), sub(log(X0), sin(1.000)))), add(X0, X0))"
+352,8.455504360451922,"root(add(mul(mul(mul(X1, X1), 0.453), X1), X0), mul(add(mul(add(1.000, X0), cos(X0)), X0), sqrt(X0)))"
+51,7.390400773375889,"root(sub(mul(div(mul(X1, X1), 2.214), X1), div(add(sqrt(X0), log(X0)), div(sig(-0.835), sin(X0)))), X0, sin(sub(X0, sub(1.000, 1.000))))"
+137,17.60048467617478,"root(mul(sqrt(mul(X1, mul(X1, X1))), X1), div(add(X0, cos(log(X1))), sin(log(mul(X0, 3.699)))), sig(mul(sub(log(X1), X1), X1)))"
+626,6.860717908288105,"root(mul(div(div(mul(X1, X1), 2.725), sin(sqrt(X1))), X1), div(X0, sig(cos(add(X0, X0)))), div(div(cos(add(1.000, X0)), sqrt(cos(X0))), sig(cos(sin(1.000)))))"
+480,32.96050895654161,"root(div(X1, sin(add(log(X1), 1.429))), sub(add(add(add(1.000, X0), add(X1, X1)), X0), add(sqrt(sub(X1, X0)), add(sin(X0), sin(X0)))))"

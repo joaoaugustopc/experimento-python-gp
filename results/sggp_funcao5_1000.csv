@@ -1,0 +1,2 @@
+seed,mse,equacao
+334,4.2398674833358193e-16,"root(add(mul(mul(sin(X0), cos(X1)), 6.000), sin(mul(cos(X0), sub(X1, X1)))))"
